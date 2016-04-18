@@ -23,5 +23,12 @@ body,html {
 }
 
 .Album:hover article {
-    margin-top: -300
+    margin-top: -300px;
+}
+
+#validatie img {
+    height: 1em;
+    width: auto;
+    border: 0;
+    margin: 0 .3em;
 }

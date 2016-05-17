@@ -14,16 +14,40 @@ body,html {
 
 .Album article {
     margin-top: 0px;
+    display: flex;
     position: relative;
     background-color: rgba(255,255,255,0.7);
     height: 300px;
     padding: 2em;
     box-sizing: border-box;
-    transition: margin-top 1s;
+    /*transition: margin-top 0.75s;*/
+    animation: naarBenedenStuiteren 1s forwards;
 }
 
 .Album:hover article {
-    margin-top: -300px;
+    /*margin-top: -300px;*/
+    animation: naarBovenStuiteren 1s forwards;
+}
+
+@keyframes naarBovenStuiteren {
+    0% {margin-top: 0px}
+    25% {margin-top: -305px}
+    30% {margin-top: -205px}
+    50% {margin-top: -305px}
+    60% {margin-top: -240px}
+    75% {margin-top: -305px}
+    80% {margin-top: -280px}
+    100% {margin-top: -300px}    
+}
+
+@keyframes naarBenedenStuiteren {
+    0% {margin-top: -300px}
+    25% {margin-top: 0px}
+    30% {margin-top: -180px}
+    60% {margin-top: 0px}
+    75% {margin-top: -60px}
+    100% {margin-top: 0px}
+
 }
 
 #validatie img {
@@ -31,4 +55,14 @@ body,html {
     width: auto;
     border: 0;
     margin: 0 .3em;
+}
+
+#validatie {
+    clear: left;
+}
+
+.Butt{
+    width: 10em;
+    padding: .5em;
+    margin: auto auto 0 auto;
 }

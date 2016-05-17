@@ -24,6 +24,11 @@ body,html {
     animation: naarBenedenStuiteren 1s forwards;
 }
 
+ul {
+    font-size: 1.4em;
+    width: 400px;
+}
+
 .Album:hover article {
     /*margin-top: -300px;*/
     animation: naarBovenStuiteren 1s forwards;
